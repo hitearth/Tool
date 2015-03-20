@@ -1490,19 +1490,7 @@ namespace Hitearth.Tool.Crypto
         //
         //***********************************************************************
 
-        public string ToHexString()
-        {
-
-            return Convert.ToBase64String(getBytes());
-            string result = data[dataLength - 1].ToString("X");
-
-            for (int i = dataLength - 2; i >= 0; i--)
-            {
-                result += data[i].ToString("X8");
-            }
-
-            return result;
-        }
+        
 
 
 
